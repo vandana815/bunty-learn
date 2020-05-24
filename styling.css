@@ -6,48 +6,150 @@ body{
     background: #000;
     background-size: cover;
 }
-.col-xs-10{
-    padding: 2px;
-    margin: 10px ;
-}
-.content{
+.box{
+    position:relative;
     border: 2px solid black;
     background-color:#262626 ;
     border-radius: 5px;
-    height: 400px;
-    padding: 2px;
-}
-.content:before{
+    height: 70vh;
+    width: 90%;
+    margin: 15px;
+ }
+.box:before{
     content: '';
     position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    background:linear-gradient(315deg,#e91e63,#5d02ff);
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background:white;
     transform: skew(2deg,2deg);
     z-index: -1;
 }
-.content:after{
+.box:nth-child(1)::before{
+    background: linear-gradient(to right, #2196f3, #f44336);
+}
+.box:nth-child(2)::before{
+    background: linear-gradient(to right, #f79d00, #64f38c);
+}
+.box:nth-child(3)::before{
+    background: linear-gradient(to right, #ff00cc, #333399); 
+}
+.box:nth-child(4)::before{
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+}
+.box:nth-child(5)::before{
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+}
+.box:nth-child(6)::before{
+    background: linear-gradient(to right, #67b26f, #4ca2cd);
+}
+.box:after{
     content: '';
     position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
     background:linear-gradient(315deg,#e91e63,#5d02ff);
     transform: skew(2deg,2deg);
     z-index: -1;
-    filter: blur(10px);
+    filter: blur(30px);
+}
+.box:nth-child(1)::after{
+    background: linear-gradient(to right, #2196f3, #f44336);
+}
+.box:nth-child(2)::after{
+    background: linear-gradient(to right, #f79d00, #64f38c);
+}
+.box:nth-child(3)::after{
+    background: linear-gradient(to right, #ff00cc, #333399); 
+}
+.box:nth-child(4)::after{
+    background: linear-gradient(to right, #00c3ff, #ffff1c);
+}
+.box:nth-child(5)::after{
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+}
+.box:nth-child(6)::after{
+    background: linear-gradient(to right, #67b26f, #4ca2cd);
 }
 
-.img-fluid{
-    max-width: 100px;
-    height: auto;
+@media all and (max-width: 425px ){
+    .container-fluide{
+        padding: 10px;
+    }
+    .content .img{
+        width: 109%;
+        margin: 0 -14px;
+        height: 69vh;
+    }
+    .img-fluid{
+        max-width: 80px;
+        height: auto;
+    }  
 }
-h3,p{
-    color: aqua;
+@media all and (max-width: 768px){
+    .container-fluide{
+        padding: 25px;
+    }
+    
+    .img{
+        width: 109%;
+        margin: 0 -15px;
+        height: 69vh;
+    }
+    .img-fluid{
+        max-width: 100px;
+        height: auto;
+    }
+    
 }
-.shadow-lg {
-    box-shadow: 0 1rem 3rem rgba(42, 187, 212, 0.175)!important;
+@media all and (max-width: 1024px){
+    .container-fluide{
+        padding: 25px;
+    }
+
+    .img{
+        width: 109%;
+        margin: 0 -15px;
+        height: 69vh;
+    }
+    .img-fluid{
+        max-width: 100px;
+        height: auto;
+    }
+    
+}
+@media all and (max-width: 1440px){
+    .container-fluide{
+        padding: 25px;
+        margin: 15px 10px;
+    }
+    
+    .img{
+        width: 109%;
+        margin: 0 -15px;
+        height: 69vh;
+    }
+    .img-fluid{
+        max-width: 100px;
+        height: auto;
+    }
+}
+@media all and (max-width: 2560px){
+    .container-fluide{
+        padding: 25px;
+        margin: 15px 10px;
+    }
+    
+    .img{
+        width: 109%;
+        margin: 0 -15px;
+        height: 69vh;
+    }
+    .img-fluid{
+        max-width: 100px;
+        height: auto;
+    }
 }
