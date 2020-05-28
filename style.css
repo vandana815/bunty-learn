@@ -202,3 +202,17 @@ h1 span:nth-child(19){
         text-shadow: none;
     }
 }
+.box{
+    position:relative;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+
+
+ }
+ .box:hover{
+     box-shadow: 0 0 40px black;
+ }
+.card .img{
+    width: 119%;
+}
